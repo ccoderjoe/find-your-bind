@@ -22,11 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->unsignedBigInteger('age')->default(18);
             $table->string('profile_picture')->nullable();
-<<<<<<< HEAD
             $table->string('gender')->default('men');
-=======
-            $table->string('gender')->default('male');
->>>>>>> parent of f4154eb... second commit
             $table->string('location')->default('Riga');
             $table->unsignedBigInteger('min_age')->default(18);
             $table->unsignedBigInteger('max_age')->default(30);
