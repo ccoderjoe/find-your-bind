@@ -1,13 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-around">
-        <div class="w-25">
-            <img src="{{ $user->getProfilePicture() }}" width="250px" height="250px" class="rounded float-left" alt="profile image">
-        </div>
-
-<<<<<<< HEAD
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="w-25">
+                <img src="{{ $user->getProfilePicture() }}" width="250px" height="250px" class="rounded float-left"
+                     alt="profile image">
+            </div>
             <div class="card row w-75 ">
                 <div class="row row-cols-1 row-cols-md-3">
                     @foreach($profiles as $profile)
@@ -23,25 +22,22 @@
                                             View gallery</a></h6>
                                 </div>
                             </div>
-=======
-        <div class="card row w-75">
+                            <div class="card row w-75">
 
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+                                <div class="col-md-8">
+                                    <div class="card">
+                                        <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
->>>>>>> parent of f4154eb... second commit
+                                        <div class="card-body">
+                                            @if (session('status'))
+                                                <div class="alert alert-success" role="alert">
+                                                    {{ session('status') }}</div>
+                                            @endif
+
+                                            You are logged in!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

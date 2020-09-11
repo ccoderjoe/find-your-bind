@@ -58,15 +58,12 @@
                     </a>
                 </ul>
 
-<<<<<<< HEAD
                 <ul class="navbar-nav mr-auto">
                     <a style="color: black"
                        href="{{ route('match.view') }}">Find your bind
                     </a>
                 </ul>
 
-=======
->>>>>>> parent of f4154eb... second commit
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
